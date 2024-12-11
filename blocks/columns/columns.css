@@ -1,10 +1,21 @@
 .columns > div {
   display: flex;
   flex-direction: column;
+  text-align: center;
+ 
 }
-
+.columns h2{
+  font-size: 2.75rem;
+  line-height: 1.25;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.columns p{
+  font-size: 14px;
+}
 .columns img {
-  width: 100%;
+  width: 80%;
+  justify-content: right;
 }
 
 .columns > div > div {
@@ -31,3 +42,4 @@
     order: unset;
   }
 }
+
