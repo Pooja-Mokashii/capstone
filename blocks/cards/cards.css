@@ -19,7 +19,13 @@
   font-size: 26px;
   
 }
-
+.cards .cards-card-body {
+  position: absolute; /* Positions the body absolutely within the card */
+  top: 0;
+  color:white;
+  margin: 26px;
+  padding: 26px;
+}
 .cards .cards-card-image {
   line-height: 0;
 }
