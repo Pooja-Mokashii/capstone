@@ -1,47 +1,54 @@
 .column1 > div {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-   
-  }
-  .column1 h2{
-    font-size: 2.75rem;
-    line-height: 1.25;
-    font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .column1 p{
-    font-size: 36px;
-  }
-  .column1 img {
-    width: 100%;
-    padding: 20px 0;
-    justify-content: right;
-  }
-  
-  .column1 > div > div {
-    order: 1;
-  }
-  
-  .column1 > div > .column1-img-col {
-    order: 0;
-  }
-  
-  .column1 > div > .column1-img-col img {
-    display: block;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+ 
+}
+.column1 h2{
+  font-size: 2.75rem;
+  line-height: 1.25;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.column1 p{
+  font-size: 36px;
+}
+.column1 img {
+  width: 100%;
+  padding: 30px 0;
+  justify-content: right;
+}
+
+.column1 > div > div {
+  order: 1;
+}
+
+.column1 > div > .column1-img-col {
+  order: 0;
+}
+
+.column1 > div > .column1-img-col img {
+  display: block;
+}
+.column1-wrapper .column1>div>div:nth-child(2) {
+  position: relative;
+  background-color: #1c1918;
+  color: #ffffff;
+  height: 100%;
+  flex: 1;
+  padding:80px 0;
+  right: 30px;
+}
+@media (width >= 900px) {
+  .column1 > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 0 30px;
   }
 
-  @media (width >= 900px) {
-    .column1 > div {
-      align-items: center;
-      flex-direction: unset;
-      gap: 0 30px;
-    }
-  
-    .column1 > div > div {
-      flex: 1;
-      order: unset;
-      
-    }
+  .column1 > div > div {
+    flex: 1;
+    order: unset;
+    
   }
-  
+}
